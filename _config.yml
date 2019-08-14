@@ -1,0 +1,8 @@
+---
+title: Municipal Elections Archive
+description: Archive of candidates and results for municipal elections in Waterloo Region
+
+collections_dir: collections
+
+remote_theme: pmarsceill/just-the-docs
+
