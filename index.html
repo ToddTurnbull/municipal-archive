@@ -1,0 +1,20 @@
+---
+layout: default
+nav_exclude: true
+---
+
+<h1>Municipal Elections Archive</h1>
+
+{% assign region = site.municipalities | where: "level", "region" | first %}
+<h2><a href="{{ region.url }}">{{ region.name }}</a></h2>
+
+{% assign cities = site.municipalities | where: "level", "city" %}
+{% for city in cities %}
+  <h2><a href="{{ city.url }}">{{ city.name }}</a></h2>
+{% endfor %}
+
+{% assign townships = site.municipalities | where: "level", "township" %}
+{% for township in townships %}
+  <h2><a href="{{ township.url }}">{{ township.name }}<a/></h2>
+{% endfor %}
+
