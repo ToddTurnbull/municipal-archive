@@ -2,6 +2,12 @@
 title: Municipal Elections Archive
 description: Archive of candidates and results for municipal elections in Waterloo Region
 
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+
 collections_dir: collections
 collections:
   municipalities:
