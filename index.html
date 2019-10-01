@@ -5,16 +5,23 @@ nav_exclude: true
 
 <h1>Municipal Elections Archive</h1>
 
-{% assign region = site.municipalities | where: "level", "region" | first %}
-<h2><a href="{{ region.url }}">{{ region.name }}</a></h2>
+{% assign elections = site.municipalities | group_by: "date" %}
+{% for election in elections %}
 
-{% assign cities = site.municipalities | where: "level", "city" %}
-{% for city in cities %}
-  <h2><a href="{{ city.url }}">{{ city.name }}</a></h2>
-{% endfor %}
+  <h2>{{ election.name | date_to_string }}</h2>
+  
+  {% assign region = election.items | where: "level", "region" | first %}
+  <h3><a href="{{ region.url }}">{{ region.name }}</a></h3>
 
-{% assign townships = site.municipalities | where: "level", "township" %}
-{% for township in townships %}
-  <h2><a href="{{ township.url }}">{{ township.name }}<a/></h2>
+  {% assign cities = election.items | where: "level", "city" %}
+  {% for city in cities %}
+    <h3><a href="{{ city.url }}">{{ city.name }}</a></h3>
+  {% endfor %}
+
+  {% assign townships = election.items | where: "level", "township" %}
+  {% for township in townships %}
+    <h3><a href="{{ township.url }}">{{ township.name }}</a></h3>
+  {% endfor %}
+
 {% endfor %}
 
