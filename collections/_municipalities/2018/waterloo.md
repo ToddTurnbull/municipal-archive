@@ -2,6 +2,6 @@
 name: Waterloo
 slug: waterloo
 level: city
-year: 2018
+date: 2018-10-22
 ---
 City of Waterloo

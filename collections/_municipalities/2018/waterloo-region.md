@@ -2,6 +2,6 @@
 name: Waterloo Region
 slug: waterloo-region
 level: region
-year: 2018
+date: 2018-10-22
 ---
 Region of Waterloo

@@ -12,7 +12,7 @@ collections_dir: collections
 collections:
   municipalities:
     output: true
-    permalink: /:title/ # could also use :path or :name
+    permalink: /:year/:title/ # could also use :path or :name
 
 defaults:
   -

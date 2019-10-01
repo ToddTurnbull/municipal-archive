@@ -2,6 +2,6 @@
 name: North Dumfries
 slug: north-dumfries
 level: township
-year: 2018
+date: 2018-10-22
 ---
 Township of North Dumfries

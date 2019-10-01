@@ -2,6 +2,6 @@
 name: Woolwich
 slug: woolwich
 level: township
-year: 2014
+date: 2014-10-27
 ---
 Township of Woolwich

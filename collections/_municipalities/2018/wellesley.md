@@ -2,6 +2,6 @@
 name: Wellesley
 slug: wellesley
 level: township
-year: 2018
+date: 2018-10-22
 ---
 Township of Wellesley
